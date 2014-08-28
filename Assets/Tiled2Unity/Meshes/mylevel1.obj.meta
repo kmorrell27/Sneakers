@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: 6b4cf80de206463468ed3af7c3c88a26
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Foreground_03+mylevel1_tiles
+    100002: layer2_02+mylevel1_tiles
+    100004: layer3_01+mylevel1_tiles
+    100006: layer4_00+mylevel1_tiles
+    100008: //RootNode
+    100010: Main_layer_02+mylevel1_tiles
+    100012: Background_1_01+mylevel1_tiles
+    100014: Background_2_00+mylevel1_tiles
+    100016: Collapsable_03+mylevel1_tiles
+    100018: Foreground_04+mylevel1_tiles
+    100020: Background_2_00+mylevel1_tiles_MeshPart0
+    100022: Background_2_00+mylevel1_tiles_MeshPart1
+    100024: Background_1_00+mylevel1_tiles
+    100026: Foreground_02+mylevel1_tiles
+    100028: Main_layer_01+mylevel1_tiles
+    400000: Foreground_03+mylevel1_tiles
+    400002: layer2_02+mylevel1_tiles
+    400004: layer3_01+mylevel1_tiles
+    400006: layer4_00+mylevel1_tiles
+    400008: //RootNode
+    400010: Main_layer_02+mylevel1_tiles
+    400012: Background_1_01+mylevel1_tiles
+    400014: Background_2_00+mylevel1_tiles
+    400016: Collapsable_03+mylevel1_tiles
+    400018: Foreground_04+mylevel1_tiles
+    400020: Background_2_00+mylevel1_tiles_MeshPart0
+    400022: Background_2_00+mylevel1_tiles_MeshPart1
+    400024: Background_1_00+mylevel1_tiles
+    400026: Foreground_02+mylevel1_tiles
+    400028: Main_layer_01+mylevel1_tiles
+    2300000: Foreground_03+mylevel1_tiles
+    2300002: layer2_02+mylevel1_tiles
+    2300004: layer3_01+mylevel1_tiles
+    2300006: layer4_00+mylevel1_tiles
+    2300008: Main_layer_02+mylevel1_tiles
+    2300010: Background_1_01+mylevel1_tiles
+    2300012: Background_2_00+mylevel1_tiles
+    2300014: Collapsable_03+mylevel1_tiles
+    2300016: Foreground_04+mylevel1_tiles
+    2300018: Background_2_00+mylevel1_tiles_MeshPart0
+    2300020: Background_2_00+mylevel1_tiles_MeshPart1
+    2300022: Background_1_00+mylevel1_tiles
+    2300024: Foreground_02+mylevel1_tiles
+    2300026: Main_layer_01+mylevel1_tiles
+    3300000: Foreground_03+mylevel1_tiles
+    3300002: layer2_02+mylevel1_tiles
+    3300004: layer3_01+mylevel1_tiles
+    3300006: layer4_00+mylevel1_tiles
+    3300008: Main_layer_02+mylevel1_tiles
+    3300010: Background_1_01+mylevel1_tiles
+    3300012: Background_2_00+mylevel1_tiles
+    3300014: Collapsable_03+mylevel1_tiles
+    3300016: Foreground_04+mylevel1_tiles
+    3300018: Background_2_00+mylevel1_tiles_MeshPart0
+    3300020: Background_2_00+mylevel1_tiles_MeshPart1
+    3300022: Background_1_00+mylevel1_tiles
+    3300024: Foreground_02+mylevel1_tiles
+    3300026: Main_layer_01+mylevel1_tiles
+    4300000: Foreground_03+mylevel1_tiles
+    4300002: layer2_02+mylevel1_tiles
+    4300004: layer3_01+mylevel1_tiles
+    4300006: layer4_00+mylevel1_tiles
+    4300008: Main_layer_02+mylevel1_tiles
+    4300010: Background_1_01+mylevel1_tiles
+    4300012: Background_2_00+mylevel1_tiles
+    4300014: Collapsable_03+mylevel1_tiles
+    4300016: Foreground_04+mylevel1_tiles
+    4300018: Background_2_00+mylevel1_tiles_MeshPart0
+    4300020: Background_2_00+mylevel1_tiles_MeshPart1
+    4300022: Background_1_00+mylevel1_tiles
+    4300024: Foreground_02+mylevel1_tiles
+    4300026: Main_layer_01+mylevel1_tiles
+    11400000: Foreground_03+mylevel1_tiles
+    11400002: layer2_02+mylevel1_tiles
+    11400004: layer3_01+mylevel1_tiles
+    11400006: layer4_00+mylevel1_tiles
+    11400008: Main_layer_02+mylevel1_tiles
+    11400010: Background_1_01+mylevel1_tiles
+    11400012: Background_2_00+mylevel1_tiles
+    11400014: Collapsable_03+mylevel1_tiles
+    11400016: Foreground_04+mylevel1_tiles
+    11400018: Background_2_00+mylevel1_tiles_MeshPart0
+    11400020: Background_2_00+mylevel1_tiles_MeshPart1
+    11400022: Background_1_00+mylevel1_tiles
+    11400024: Foreground_02+mylevel1_tiles
+    11400026: Main_layer_01+mylevel1_tiles
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 0
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 2
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 

@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: d5e910d426e08443498e68591f07d8f9
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: legilmarsdog_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 226
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 226
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 226
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_3
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 227
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_4
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 227
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_5
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 227
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 194
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_7
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 194
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_8
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 194
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 195
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_10
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 195
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_11
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 195
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 162
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_13
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 162
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_14
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 162
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_15
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 162
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_16
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 162
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_17
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 162
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 130
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_19
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 130
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 130
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_21
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 131
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_22
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 131
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_23
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 131
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 98
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_25
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 98
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_26
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 98
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_27
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 98
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_28
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 98
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_29
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 98
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_30
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 98
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_31
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 98
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_32
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 98
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_33
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 66
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_34
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 66
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_35
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 66
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_36
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 66
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_37
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 66
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_38
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 66
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_39
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 66
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_40
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 66
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_41
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 66
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_42
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 34
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_43
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 34
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_44
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 34
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_45
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 34
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_46
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 34
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_47
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 34
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_49
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 2
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_50
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_51
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_52
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: legilmarsdog_53
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 2
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 
