@@ -8,8 +8,9 @@ using System.Text;
 
 using UnityEngine;
 using UnityEditor;
+using Tiled2Unity;
 
-[CustomEditor(typeof(SortingLayerExposed))]
+[CustomEditor(typeof(Tiled2Unity.SortingLayerExposed))]
 public class SortingLayerExposedEditor : Editor
 {
     public override void OnInspectorGUI()

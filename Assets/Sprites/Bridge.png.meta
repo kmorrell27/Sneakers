@@ -1,6 +1,8 @@
 fileFormatVersion: 2
 guid: 814f3db4f78590541ae8c70434d7e6f5
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: Bridge
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

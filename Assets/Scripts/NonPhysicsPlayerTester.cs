@@ -23,7 +23,11 @@ public class NonPhysicsPlayerTester : MonoBehaviour
 	private Vector3 _velocity;
 	private bool movementLocked = false;
 	private PlayerHealth health;
-
+	private Transform curTransform;
+	private BoxCollider2D bc;
+	private bool justHit;
+	private SpriteRenderer renderer;
+	private bool invincibilityFrames;
 
 
 
@@ -38,6 +42,10 @@ public class NonPhysicsPlayerTester : MonoBehaviour
 		_controller.onTriggerEnterEvent += onTriggerEnterEvent;
 		_controller.onTriggerExitEvent += onTriggerExitEvent;
 		health = GetComponent<PlayerHealth>();
+		curTransform = GetComponent<Transform>();
+		bc = GetComponent<BoxCollider2D>();
+		renderer = GetComponent<SpriteRenderer>();
+		
 	}
 
 
@@ -45,15 +53,10 @@ public class NonPhysicsPlayerTester : MonoBehaviour
 
 	void onControllerCollider( RaycastHit2D hit )
 	{
-		if (hit.collider.tag == "DestructableGround") {
-			movementLocked = true;
-			Debug.Log("Locked");
-			Destroy(hit.collider.gameObject);
-		}
-		else if (hit.collider.tag == "Enemy") {
-			int damage = hit.collider.GetComponent<EnemyDamage>().damage;
-			health.decreaseHealth(damage);
-		}
+		
+		if (hit.collider.tag != "Untagged")
+			Debug.Log (hit.collider.tag);
+
 		// bail out on plain old ground hits cause they arent very interesting
 		else if( hit.normal.y == 1f ) {
 			movementLocked = false;
@@ -63,11 +66,26 @@ public class NonPhysicsPlayerTester : MonoBehaviour
 		// logs any collider hits if uncommented. it gets noisy so it is commented out for the demo
 		//Debug.Log( "flags: " + _controller.collisionState + ", hit.normal: " + hit.normal );
 	}
-
+	
+	void onControllerCollidedEvent() {
+	
+	}
 
 	void onTriggerEnterEvent( Collider2D col )
 	{
-
+		if (col.tag == "Enemy") {
+			if (invincibilityFrames) {
+				// I don't care, let's pass through them.
+				return;
+			}
+			// Find where it's coming from.
+			Vector3 center = col.bounds.center;
+			bool right = ((center.x - bc.bounds.center.x) > 0);
+			PlayerHit(right);
+			int damage = col.GetComponent<EnemyDamage>().damage;
+			health.decreaseHealth(damage);
+			StartCoroutine(BlinkPlayer());
+		}	
 	}
 
 
@@ -84,9 +102,13 @@ public class NonPhysicsPlayerTester : MonoBehaviour
 	{
 		// grab our current _velocity to use as a base for all calculations
 		_velocity = _controller.velocity;
-
+		
 		if (_controller.isGrounded) {
 			_velocity.y = 0;
+			// Once we've landed the player can move again.
+			if (justHit) {
+				UnlockMovement();
+			}
 		}
 
 		float h = Input.GetAxisRaw("Horizontal");
@@ -134,15 +156,15 @@ public class NonPhysicsPlayerTester : MonoBehaviour
 			}
 		}
 
+		// If we've locked the player's movement, keep their x the same.
 		if (movementLocked) {
-			normalizedHorizontalSpeed = 0;
+			normalizedHorizontalSpeed = Mathf.Sign(_velocity.x);
 		}
 
 		// we can only jump whilst grounded
 		if( _controller.isGrounded && Input.GetButtonDown("Jump") && !movementLocked)
 		{
 			_velocity.y = jumpHeight;
-			Debug.Log ("Jumped");
 			_animator.Play( Animator.StringToHash( "Jump" ) );
 		} else if (!_controller.isGrounded && _velocity.y > 0 && !Input.GetButton ("Jump")) {
 			_velocity.y = 0;
@@ -156,16 +178,46 @@ public class NonPhysicsPlayerTester : MonoBehaviour
 		if (_velocity.y < terminalVelocity) {
 			_velocity.y = terminalVelocity;
 		}
-
+		
 		_controller.move( _velocity * Time.deltaTime );
 	}
 
 	public void LockMovement() {
 		movementLocked = true;
 	}
+	
+	public void PlayerHit(bool right) {
+		LockMovement();
+		float x = right ? -30f : 30f;
+		float y = 20f;
+		Vector3 _velocity = new Vector3(x, y, 0f);
+		// apply gravity before moving
+		_velocity.y += gravity * Time.deltaTime;
+		if (_velocity.y < terminalVelocity) {
+			_velocity.y = terminalVelocity;
+		}
+		justHit = true;
+		_controller.move (_velocity * Time.deltaTime);
+	}
 
 	public void UnlockMovement() {
 		movementLocked = false;
 	}
-
+	
+	public IEnumerator BlinkPlayer() {
+		invincibilityFrames = true;
+		gameObject.layer = LayerMask.NameToLayer("PlayerBlink");
+		for(var n = 0; n < 10; n++)
+		{
+			renderer.enabled = true;
+			yield return new WaitForSeconds(0.1f);
+			renderer.enabled = false;
+			yield return new WaitForSeconds(0.1f);
+		}
+		renderer.enabled = true;
+		// And then undo it.
+		invincibilityFrames = false;
+		gameObject.layer = LayerMask.NameToLayer("Player");
+		
+	}
 }

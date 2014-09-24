@@ -13,7 +13,7 @@ public class CollapseableGround : MonoBehaviour {
 	
 	}
 	void OnTriggerEnter2D(Collider2D col) {
-		Debug.Log ("Whooh");
+		Debug.Log (col.gameObject.tag);
 		if (col.gameObject.tag == "Player") {
 			Destroy(gameObject);
 		}

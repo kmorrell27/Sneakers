@@ -8,10 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Level.unity
   - enabled: 0
-    path: Assets/TitleScreen.unity
-  - enabled: 0
     path: Assets/Scenes/Level 1/Level 1.unity
+  - enabled: 1
+    path: Assets/TitleScreen.unity
   - enabled: 0
     path: Assets/Scenes/PhysicsDemo/PhysicsDemo.unity
   - enabled: 1
     path: Assets/Scenes/New Intro.unity
+  - enabled: 1
+    path: Assets/Scenes/Rain.unity

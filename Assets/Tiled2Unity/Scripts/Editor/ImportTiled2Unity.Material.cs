@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Xml;
 using System.Xml.Linq;
 
@@ -21,10 +22,18 @@ namespace Tiled2Unity
 
             XDocument xml = XDocument.Load(xmlPath);
 
+            // The mesh to match
+            string meshName = renderer.name;
+
+            // The mesh name may be decorated by Unity
+            string pattern = @"_MeshPart[\d]$";
+            Regex regex = new Regex(pattern);
+            meshName = regex.Replace(meshName, "");
+
             var assignMaterials = xml.Root.Elements("AssignMaterial");
 
             // Find an assignment that matches the mesh renderer
-            XElement match = assignMaterials.FirstOrDefault(el => el.Attribute("mesh").Value == renderer.name);
+            XElement match = assignMaterials.FirstOrDefault(el => el.Attribute("mesh").Value == meshName);
 
             if (match == null)
             {

@@ -96,7 +96,10 @@ namespace Tiled2Unity
                 // Assign the child to the parent
                 child.transform.parent = parent.transform;
 
-                // Do we have any collision data
+                // Add any tile animators
+                AddTileAnimatorsTo(child, goXml);
+
+                // Do we have any collision data?
                 AddCollidersTo(child, goXml);
 
                 // Do we have any children of our own?
@@ -220,7 +223,6 @@ namespace Tiled2Unity
                              select new Vector2(x, y);
 
                 collider.points = points.ToArray();
-
             }
 
             // Polygon colliders
@@ -270,6 +272,22 @@ namespace Tiled2Unity
             // If we're here then there's an error with the mesh name
             Debug.LogError(String.Format("No mesh named '{0}' to copy from.", copyFromName));
             return null;
+        }
+
+        private void AddTileAnimatorsTo(GameObject gameObject, XElement goXml)
+        {
+            foreach (var animXml in goXml.Elements("TileAnimator"))
+            {
+                TileAnimator tileAnimator = gameObject.AddComponent<TileAnimator>();
+
+                foreach (var frameXml in animXml.Elements("Frame"))
+                {
+                    TileAnimator.Frame frame = new TileAnimator.Frame();
+                    frame.Vertex_z = ImportUtils.GetAttributeAsFloat(frameXml, "vertex_z");
+                    frame.DurationMs = ImportUtils.GetAttributeAsInt(frameXml, "duration");
+                    tileAnimator.frames.Add(frame);
+                }
+            }
         }
 
         private void HandleCustomProperties(GameObject gameObject, XElement goXml, IList<ICustomTiledImporter> importers)

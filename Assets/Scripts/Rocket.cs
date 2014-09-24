@@ -25,6 +25,7 @@ public class Rocket : MonoBehaviour
 	void OnCollisionEnter2D (Collision2D col) 
 	{
 		OnExplode();
+		Debug.Log (col.gameObject.tag);
 
 		if(col.gameObject.tag == "Enemy")
 		{
@@ -36,12 +37,10 @@ public class Rocket : MonoBehaviour
 			Destroy (gameObject);
 		}
 		// Otherwise if it hits a destructable wall
-		else if(col.gameObject.tag == "DestructableWall")
+		else if(col.gameObject.tag == "DestructableBlock")
 		{
-			col.gameObject.GetComponent<DestructableWall>().Dissolve();
-
 			// Destroy the bomb crate.
-			Destroy (col.gameObject);
+			Destroy (col.gameObject.transform.parent);
 
 			// Destroy the rocket.
 			Destroy (gameObject);

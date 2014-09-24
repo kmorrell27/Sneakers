@@ -17,7 +17,7 @@ TagManager:
   - DestructableWall
   - DogBlocker
   - DogUnblocker
-  - DestructableGround
+  - DestructableBlock
   - Parallax
   - 
   Builtin Layer 0: Default
@@ -36,10 +36,10 @@ TagManager:
   User Layer 13: Wall
   User Layer 14: SnowCollider
   User Layer 15: Bullet
-  User Layer 16: DestructableGround
+  User Layer 16: Dog
   User Layer 17: WaterfallCollider
-  User Layer 18: 
-  User Layer 19: 
+  User Layer 18: PlayerBlink
+  User Layer 19: DestructableBlock
   User Layer 20: 
   User Layer 21: 
   User Layer 22: 
