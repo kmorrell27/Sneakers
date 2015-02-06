@@ -22,6 +22,19 @@ public class Rocket : MonoBehaviour
 		Destroy(gameObject, 2);
 	}
 	
+	void OnTriggerEnter2D(Collider2D col) {
+		OnExplode();
+		if(col.gameObject.tag == "Enemy")
+		{
+			// ... find the Enemy script and call the Hurt function.
+			col.gameObject.GetComponent<EnemyHealth>().DecreaseHealth(1);
+			
+			
+			// Destroy the rocket.
+			Destroy (gameObject);
+		}
+	}
+	
 	void OnCollisionEnter2D (Collision2D col) 
 	{
 		OnExplode();
@@ -30,7 +43,7 @@ public class Rocket : MonoBehaviour
 		if(col.gameObject.tag == "Enemy")
 		{
 			// ... find the Enemy script and call the Hurt function.
-			//col.gameObject.GetComponent<Enemy>().Hurt();
+			col.gameObject.GetComponent<EnemyHealth>().DecreaseHealth(1);
 
 
 			// Destroy the rocket.
@@ -39,8 +52,8 @@ public class Rocket : MonoBehaviour
 		// Otherwise if it hits a destructable wall
 		else if(col.gameObject.tag == "DestructableBlock")
 		{
-			// Destroy the bomb crate.
-			Destroy (col.gameObject.transform.parent);
+			// Destroy the block.
+			Destroy (col.gameObject);
 
 			// Destroy the rocket.
 			Destroy (gameObject);

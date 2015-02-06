@@ -3,9 +3,14 @@ using System.Collections;
 
 public class CollapseableGround : MonoBehaviour {
 
+	private Transform myTransform;
 	// Use this for initialization
 	void Start () {
 	
+	}
+	
+	void Awake() {
+		myTransform = this.transform;
 	}
 	
 	// Update is called once per frame
@@ -15,7 +20,9 @@ public class CollapseableGround : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col) {
 		Debug.Log (col.gameObject.tag);
 		if (col.gameObject.tag == "Player") {
-			Destroy(gameObject);
+			if (col.transform.position.y > myTransform.position.y) {
+				Destroy(gameObject);
+			}
 		}
 	}
 }
